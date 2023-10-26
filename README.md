@@ -10,4 +10,5 @@ This is a super hacky proof-of-concept that took me, like, 20 minutes on a Thurs
 
 1. Clone the repo using `https://github.com/stevenjmesser/design-system-discussion-poc.git`
 2. Navigate to the `design-system-discussion-poc` folder in your terminal
-3. Run `npm run dev`
+3. Run `npm install`
+4. Run `npm start`

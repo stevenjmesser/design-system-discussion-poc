@@ -9,7 +9,7 @@
     <ul class="govuk-list govuk-list--bullet">
       <li>
         <a class="govuk-link app-contact-panel__link" href="https://github.com/alphagov/govuk-design-system-backlog/issues/{{ backlogIssueId }}">
-          take part in the ‘{{ title }}’ discussion on GitHub and share your research
+          take part in the ‘{{ title }}’ discussion below and share your research
         </a>
       </li>
       <li>
@@ -20,6 +20,19 @@
         </a>
       </li>
     </ul>
+<script src="https://giscus.app/client.js"
+        data-repo="stevenjmesser/design-system-discussion-poc"
+        data-repo-id="R_kgDOKlRGGg"
+        data-mapping="number"
+        data-term="{{ backlogIssueId }}"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
   {% else %}
     <p class="govuk-body">
       If you spot a problem with this guidance you can
