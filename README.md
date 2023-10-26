@@ -4,7 +4,7 @@ A proof-of-concept for using GitHub Discussions as the backend for comments on G
 
 ## Notes
 
-This is a super hacky proof-of-concept that took me, like, 20 minutes on a Thursday morning. 
+This is a super hacky proof-of-concept that took me, like, 90 minutes on a Thursday morning. 
 
 # Installation
 
