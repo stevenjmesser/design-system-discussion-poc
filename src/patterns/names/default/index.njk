@@ -1,0 +1,16 @@
+---
+title: Names
+layout: layout-example-form.njk
+---
+
+{% from "govuk/components/input/macro.njk" import govukInput %}
+
+{{ govukInput({
+  label: {
+    text: "Full name"
+  },
+  id: "full-name",
+  name: "fullName",
+  autocomplete: "name",
+  spellcheck: false
+}) }}

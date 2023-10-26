@@ -1,0 +1,21 @@
+---
+title: Text input with prefix – Text input
+layout: layout-example-form.njk
+---
+
+{% from "govuk/components/input/macro.njk" import govukInput %}
+
+{{ govukInput({
+  id: "cost",
+  name: "cost",
+  label: {
+    text: "What is the cost in pounds?",
+    classes: "govuk-label--l",
+    isPageHeading: true
+  },
+  prefix: {
+    text: "£"
+  },
+  classes: "govuk-input--width-5",
+  spellcheck: false
+}) }}

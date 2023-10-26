@@ -1,0 +1,36 @@
+---
+title: Small checkboxes – Checkboxes
+layout: layout-example-form.njk
+---
+
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+{{ govukCheckboxes({
+  name: "organisation",
+  classes: "govuk-checkboxes--small",
+  fieldset: {
+    legend: {
+      text: "Organisation",
+      isPageHeading: true,
+      classes: "govuk-fieldset__legend--m"
+    }
+  },
+  items: [
+    {
+      value: "hmrc",
+      text: "HM Revenue and Customs (HMRC)"
+    },
+    {
+      value: "employment-tribunal",
+      text: "Employment Tribunal"
+    },
+    {
+      value: "MOD",
+      text: "Ministry of Defence"
+    },
+    {
+      value: "DfT",
+      text: "Department for Transport"
+    }
+  ]
+}) }}

@@ -1,0 +1,19 @@
+---
+title: Hint text – Text input
+layout: layout-example-form.njk
+---
+
+{% from "govuk/components/input/macro.njk" import govukInput %}
+
+{{ govukInput({
+  label: {
+    text: "What is the name of the event?",
+    classes: "govuk-label--l",
+    isPageHeading: true
+  },
+  hint: {
+    text: "The name you’ll use on promotional material"
+  },
+  id: "event-name",
+  name: "eventName"
+}) }}

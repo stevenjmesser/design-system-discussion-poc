@@ -1,0 +1,31 @@
+.app-options {
+  margin-bottom: govuk-spacing(2);
+  padding: 0;
+
+  @include govuk-media-query($from: tablet) {
+    margin-bottom: govuk-spacing(3);
+  }
+}
+
+.app-options__table {
+  max-width: 38em;
+
+  @include govuk-media-query(mobile) {
+    table-layout: fixed;
+
+    .govuk-table__header,
+    .govuk-table__cell {
+      padding-right: govuk-spacing(2);
+
+      // Automatic wrapping for unbreakable option names
+      word-wrap: break-word; // Fallback for older browsers only
+      overflow-wrap: break-word;
+    }
+  }
+}
+
+.app-options__limit-table-cell {
+  @include govuk-media-query(mobile) {
+    width: 29%;
+  }
+}

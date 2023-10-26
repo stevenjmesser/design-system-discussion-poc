@@ -1,0 +1,27 @@
+---
+title: Server-side implementation with confirmation – Cookie banner
+layout: layout-example.njk
+---
+
+{% from "govuk/components/cookie-banner/macro.njk" import govukCookieBanner %}
+
+{% set acceptHtml %}
+  <p class="govuk-body">You’ve accepted additional cookies. You can <a class="govuk-link" href="#">change your cookie settings</a> at any time.</p>
+{% endset %}
+
+{{ govukCookieBanner({
+  ariaLabel: "Cookies on [name of service]",
+  messages: [
+    {
+      html: acceptHtml,
+      actions: [
+        {
+          text: "Hide cookie message",
+          type: "submit",
+          name: "cookies[hide]",
+          value: "yes"
+        }
+      ]
+    }
+  ]
+}) }}

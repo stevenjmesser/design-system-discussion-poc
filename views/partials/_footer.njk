@@ -1,0 +1,27 @@
+{% from "govuk/components/footer/macro.njk" import govukFooter %}
+
+{{ govukFooter({
+  "classes": "app-footer",
+  "containerClasses" : "app-width-container",
+  "meta": {
+    "items": [
+      {
+        "href": "/accessibility/",
+        "text": "Accessibility"
+      },
+      {
+        "href": "/sitemap/",
+        "text": "Sitemap"
+      },
+      {
+        "href": "/cookies/",
+        "text": "Cookies"
+      },
+      {
+        "href": "/privacy-policy/",
+        "text": "Privacy"
+      }
+    ],
+    "html": 'Built by the <a href="/design-system-team/" class="govuk-footer__link">GOV.UK Design System team</a>'
+  }
+}) }}

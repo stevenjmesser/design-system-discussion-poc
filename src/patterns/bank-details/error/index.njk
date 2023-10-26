@@ -1,0 +1,24 @@
+---
+title: Errors – Bank details
+layout: layout-example-form.njk
+---
+
+{% from "govuk/components/input/macro.njk" import govukInput %}
+
+{{ govukInput({
+  label: {
+    text: "Sort code"
+  },
+  classes: "govuk-input--width-5 govuk-input--extra-letter-spacing",
+  hint: {
+    text: "Must be 6 digits long"
+  },
+  value: "12",
+  id: "sort-code",
+  name: "sortCode",
+  inputmode: "numeric",
+  spellcheck: false,
+  errorMessage: {
+    text: "Enter a valid sort code like 309430"
+  }
+}) }}

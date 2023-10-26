@@ -1,0 +1,11 @@
+---
+title: Secondary button – Button
+layout: layout-example-form.njk
+---
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  text: "Find address",
+  classes: "govuk-button--secondary"
+}) }}

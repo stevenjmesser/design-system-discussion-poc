@@ -1,0 +1,20 @@
+---
+title: Character count
+layout: layout-example-form.njk
+---
+
+{% from "govuk/components/character-count/macro.njk" import govukCharacterCount %}
+
+{{ govukCharacterCount({
+  name: "withHint",
+  id: "with-hint",
+  maxlength: 200,
+  label: {
+    text: "Can you provide more detail?",
+    classes: "govuk-label--l",
+    isPageHeading: true
+  },
+  hint: {
+    text: "Do not include personal or financial information like your National Insurance number or credit card details."
+  }
+}) }}

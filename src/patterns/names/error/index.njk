@@ -1,0 +1,19 @@
+---
+title: Name input with errors – Names
+layout: layout-example-form.njk
+---
+
+{% from "govuk/components/input/macro.njk" import govukInput %}
+
+{{ govukInput({
+  label: {
+    text: "Full name"
+  },
+  id: "full-name",
+  name: "fullName",
+  autocomplete: "name",
+  errorMessage: {
+    text: "Enter your full name"
+  },
+  spellcheck: false
+}) }}
