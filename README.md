@@ -2,9 +2,15 @@
 
 A proof-of-concept for using GitHub Discussions as the backend for comments on GOV.‌UK Design System backlog items.
 
-## Notes
+![](/src/images/design-system-discussion-poc.gif)
 
-This is a super hacky proof-of-concept that took me, like, 90 minutes on a Thursday morning. 
+## Why?
+
+Many digital specialists across government, apart from developers, are uncomfortable with using GitHub as they believe it’s ‘not for them’. This proof-of-concept was to show that it’s possible to design around that while still keeping existing comments and discussion stored on GitHub.
+
+# Notes
+
+This is a super hacky proof-of-concept that took me, like, 90 minutes on a Thursday morning. After sharing it with the team, a next step would have been taking it to users to test their reactions to the prototype.
 
 # Installation
 
