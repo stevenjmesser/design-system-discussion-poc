@@ -16,7 +16,7 @@ One risk to have mitigated down the line was implementing this with a moderation
 
 # Installation
 
-1. Clone the repo using `https://github.com/stevenjmesser/design-system-discussion-poc.git`
+1. Clone the repo using `https://github.com/stevenjmesser/design-system-discussion-poc.git` or [create a codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/creating-a-codespace-for-a-repository) on `main`
 2. Navigate to the `design-system-discussion-poc` folder in your terminal
 3. Run `npm install`
 4. Run `npm start`
